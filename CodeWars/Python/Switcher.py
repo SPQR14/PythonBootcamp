@@ -21,4 +21,4 @@ def numeros_a_meses(caracter):
     func = switcher.get(caracter, lambda: "Invalid char")
     return func()
 
-print(numeros_a_meses('t'))
+print(numeros_a_meses(''))
