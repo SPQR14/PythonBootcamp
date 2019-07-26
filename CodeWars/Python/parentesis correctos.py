@@ -6,16 +6,15 @@ def valid_parentheses(string):
 
 def switch(caracter):
     switcher = {
-        1: ')',
-        2: ']',
-        3: '}',
-        4: '>',
-        5: '(',
-        6: '[',
-        7: '{',
-        8: '<',
-        9: False
+        ')': False,
+        ']': True,
+        '}': True,
+        '>': True,
+        '(': '(',
+        '[': '[',
+        '{': '{',
+        '<': '<',
     }
-    print switcher.get(caracter, "Caracter no válido")
+    return switcher.get(caracter)
 
-switch('f')
+print(switch(')'))
