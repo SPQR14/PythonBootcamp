@@ -1,14 +1,21 @@
 def valid_parentheses(string):
-    if len(string) < 0 or len(string) > 100:
+    if len(string) < 1 or len(string) > 99:
         return False
-    else:
-        return validacion(string)
-        
-def validacion(string):
-    if len(string) % 2 == 0:
-        return True
-    else:
-        return False
-    return False
+    pila = []
+    
 
-print(valid_parentheses("()()()()()()(())"))
+def switch(caracter):
+    switcher = {
+        1: ')',
+        2: ']',
+        3: '}',
+        4: '>',
+        5: '(',
+        6: '[',
+        7: '{',
+        8: '<',
+        9: False
+    }
+    print switcher.get(caracter, "Caracter no válido")
+
+switch('f')
