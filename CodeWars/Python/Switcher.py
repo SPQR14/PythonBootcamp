@@ -1,6 +1,14 @@
 def par_izq():
+    return "Hola"
+
+def two():
+    return True
+
+def three():
     return False
 
+def four():
+    return False
 
 
 def numeros_a_meses(caracter):
@@ -10,6 +18,7 @@ def numeros_a_meses(caracter):
         ']' : three,
         '>' : four
     }
-    return switcher.get(caracter)
-    
-print(numeros_a_meses(')'))
+    func = switcher.get(caracter, lambda: "Invalid char")
+    return func()
+
+print(numeros_a_meses('t'))

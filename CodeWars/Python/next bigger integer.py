@@ -32,4 +32,4 @@ def next_bigger(num):
         salida = derecha + sorted(izquierda)
         return int(''.join(str(x) for x in salida))
 
-print(next_bigger('1258'))
+print(next_bigger('2321'))
