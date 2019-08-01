@@ -43,11 +43,7 @@ public class StringR {
                     if(!val) { break; }
                 }
 
-                if(caracteres.empty()) {
-                    return true;
-                } else {
-                    return false;
-                }
+                 
             }
         }
     }
