@@ -3,11 +3,9 @@ def count_smileys(arr):
     cont = 0
     ojos = False
     boca = False
-    for i in range(0, len(arr) - 1):
+    for i in range(0, len(arr)):
         aux = arr[i]
-        if len(aux) > 3:
-            continue
-        if not aux:
+        if len(aux) > 3 or not aux:
             continue
         if aux[0] == ':' or aux[0] == ';':
             ojos = True
