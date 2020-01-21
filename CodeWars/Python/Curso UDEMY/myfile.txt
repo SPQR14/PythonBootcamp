@@ -2,3 +2,5 @@ No manches
 si esto es posible sólo en JUPYTER
 entonces es una pistola y no necesitamos más 
 el código duro
+
+Esto es una jodida maravilla, amiguitos
