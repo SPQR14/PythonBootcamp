@@ -3,7 +3,10 @@ Milestone
 """
 
 
+
+
 import os
+
 
 tablero = [['1 ', '| ', '2 ', '| ', '3'],
            ['- ','- ' ,'- ', '- ' ,'- '], 
@@ -78,10 +81,10 @@ def selecciona_ganador():
     vertical3 = tablero[0][4] + tablero[2][4] + tablero[4][4]
     diagonal_derecha = tablero[0][0] + tablero[2][2] + tablero[4][4]
     diagonal_izquierda = tablero[4][0] + tablero[2][2] + tablero[0][4]
-    if horizontal1 == 'X X X ' or horizontal2 == 'X X X ' or horizontal3 == 'X X X ' or horizontal1 == 'O O O ' or horizontal1 == 'O O O ' or horizontal3 == 'O O O ' :
+    if horizontal1 == 'X X X ' or horizontal2 == 'X X X ' or horizontal3 == 'X X X ' or horizontal1 == 'O O O ' or horizontal2 == 'O O O ' or horizontal3 == 'O O O ' :
         print(f"El ganador es el jugador {numero_jugador}!!!")
         return True
-    elif vertical1 == 'X X X ' or vertical2 == 'X X X ' or vertical3 == 'X X X ' or vertical1 == 'O O O ' or vertical3 == 'O O O ' or vertical3 == 'O O O ' :
+    elif vertical1 == 'X X X ' or vertical2 == 'X X X ' or vertical3 == 'X X X ' or vertical1 == 'O O O ' or vertical2 == 'O O O ' or vertical3 == 'O O O ' :
         print(f"El ganador es el jugador {numero_jugador}!!!")
         return True
     elif diagonal_derecha == 'X X X ' or diagonal_derecha == 'O O O ' or diagonal_izquierda == 'X X X ' or diagonal_derecha == 'O O O ':
@@ -107,9 +110,3 @@ while(True):
         jugador = '0'
     tiradas.append(tiro)
     turno += 1
-
-    
-   
-    
-
-   
