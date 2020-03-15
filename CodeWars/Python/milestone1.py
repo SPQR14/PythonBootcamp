@@ -93,7 +93,11 @@ def selecciona_ganador():
     elif 10 - turno == 0:
         print("GATO")
         return True
-       
+"""
+    return(
+
+    )
+"""  
 
 while(True):
     os.system("CLS")
